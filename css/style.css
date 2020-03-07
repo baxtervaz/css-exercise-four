@@ -1,4 +1,77 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
+  font-family: serif;
   font-size: 10px;
+}
+
+/* Title */
+.header {
+  text-align: center;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-size: 2em;
+  font-weight: bolder;
+  line-height: 2.5em;
+  column-count: unset;
+}
+
+/* Ctites with Images */
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.preview-baku {
+  background-image: url("images/baku.jpg");
+  background-size: cover;
+}
+
+.preview-london {
+  background-image: url("images/london.png");
+  background-size: cover;
+}
+
+.preview-madrid {
+  background-image: url("images/madrid.jpg");
+  background-size: cover;
+}
+
+.preview-rome {
+  background-image: url("images/rome.jpg");
+  background-size: cover;
+}
+
+.preview-baku, .preview-london, .preview-madrid, .preview-rome {
+    margin-bottom: 5%;
+    width: 100%;
+    height: 325px;
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: left;
+}
+
+
+/* Tablet settings */
+@media screen and (min-width: 575px){
+  div {
+    margin: 0%;
+    width: 100%;
+    display: inline-block;
+    column-count: 2;
+  }
+}
+
+/* Laptop settings */
+@media screen and (min-width: 991px){
+   div {
+    margin: 0%;
+    width: 100%;
+    display: block;
+    column-count: 4;
+  }
 }
